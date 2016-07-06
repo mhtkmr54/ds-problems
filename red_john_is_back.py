@@ -17,7 +17,7 @@ def possiblities(N):
     for s in xrange(0,max_hor_set+1):
         num = N - (s * 4) + s
         arrangements += factorial(num)/(factorial(num-s) * factorial(s))
-        #print "arrangements", arrangements
+        #print "arran???gements", arrangements
     poss_arr.append(arrangements)        
         
 

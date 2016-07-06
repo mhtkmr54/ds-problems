@@ -71,3 +71,65 @@ def divisors(n):
     # in python3, `yield from generate(0)` would also work
     for factor in generate(0):
         yield factor
+        
+        
+        
+#---------------------------------final --------------------------------------------------------
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import defaultdict
+
+
+boolean isWinning(position pos) {
+    moves[] = possible positions to which I can move from the
+position pos;
+    for (all x in moves) 
+        if (!isWinning(x)) return true;
+    
+    return false; 
+}
+
+
+
+
+
+def primes_power(n):
+    primfac = defaultdict(int)
+    d = 2
+    while d*d <= n:
+        while (n % d) == 0:
+            primfac[d] += 1  # counter for the power of the prime
+            n //= d
+        d += 1
+    if n > 1:
+        primfac[n] += 1
+    powers = list(primfac.values())
+    print powers
+    total_divisors = 1
+    for a in  powers:     #getting total no. of divisors
+        total_divisors *= (a+1) 
+    print total_divisors
+    return total_divisors
+
+def main():
+    T = int(input())
+    for i in xrange(T):
+        N = map(int, raw_input().strip().split())
+        print N
+        heights = map(int, raw_input().strip().split())
+        print heights
+        possible_heights = []
+        for h in heights:
+            possible.append()
+            
+
+        
+if __name__ == '__main__':
+    main()    
+
+
+
+
+
+
+
+
